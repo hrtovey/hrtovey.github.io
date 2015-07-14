@@ -75,13 +75,13 @@ h2 {
 }
 
 .main-container {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.7em;
     text-transform: none;
     letter-spacing: 0px;
     font-weight: 400;
     font-style: normal;
-    text-align: center;
+    text-align: left;
     color: #c2c2c2;
     margin-bottom:50px;
 }
