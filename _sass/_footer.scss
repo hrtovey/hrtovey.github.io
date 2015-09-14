@@ -1,0 +1,18 @@
+.site-footer {
+	text-align:center;
+}
+
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+    padding-top:2.5rem;
+}
+
+.social-media__item {
+	display:inline-block;
+	text-transform:uppercase;
+}
+
+.footer-divider {
+	color:$brand-color;
+}
