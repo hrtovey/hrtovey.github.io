@@ -185,6 +185,8 @@ pre {
         display: table;
         clear: both;
     }
+.brand-color {
+	color:$brand-color;
 }
 
 
@@ -204,4 +206,7 @@ pre {
             fill: $grey-color;
         }
     }
+}
+.brand-color-dark {
+	color:$brand-color-dark;
 }
