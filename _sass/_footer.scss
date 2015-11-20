@@ -15,4 +15,37 @@
 
 .footer-divider {
 	color:$brand-color;
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -163px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 163px; 
+}
+
+
+@media (min-width:442px) {
+  .page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -133px; 
+  }
+  .page-wrap:after {
+    content: "";
+    display: block;
+  }
+  .site-footer, .page-wrap:after {
+    height: 133px; 
+  }
 }
