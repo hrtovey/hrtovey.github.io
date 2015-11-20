@@ -1,34 +1,89 @@
 ---
-layout: default
+layout: home
 ---
 
-<div class="main-wrapper">
-    <div class="header-container">
-        <header class="wrapper clearfix">
-            <h1 class="title">Heather Tovey</h1>
-            <h2 class="subtitle">Web Developer</h2>
-        </header>
-    </div>
+    <section class="home__description home__section ss-style-doublediagonal ss-light">
+      <div class="container container--home">
+        <h1 class="home-header">Hello World! I'm a <span id="_followMouse" class="gradient">Front-End Web Developer</span> in Calgary, Alberta.</h1>
+        <a class="home-link hvr-icon-pop icon-pop-arrow-down" href="/#projects">Recent Projects</a>
+      </div>
+    </section>
+    <section class="home__portfolio home__section" id="projects">
+        {% assign portfolio = site.portfolio | sort:"number" %}
+          <ul class="portfolio-list">
+            <li class="portfolio__item ss-style-doublediagonal ss-dark">
+              <div class="container container--home">
+                <img srcset="{{site.baseurl}}/img/portfolio/nerdlabyyc--small.png 285w,
+                {{site.baseurl}}/img/portfolio/nerdlabyyc--med.png 550w, 
+                {{site.baseurl}}/img/portfolio/nerdlabyyc.png 767w" 
+                src="{{site.baseurl}}/img/portfolio/nerdlabyyc.png"
+                alt="NerdLab YYC website"
+                class="home-thumbnail">
+                <h2 class="portfolio-title gradient-light">NerdLab YYC</h2>
+                <div class="portfolio-description">
+                <p>NerdLab YYC, a Calgary community for feminist nerds in tech, needed a place to post news and house resources (including their Code of Conduct). I took their logo, and created a fun and functional website around it.</p>
+                <p>Feminist and geeky icons, as well as the pink accent color complement the group's personality and interests. The website also encourages visitors to join NerdLab YYC's Meetup group, and  prominently displays the group's Code of Conduct.</p>
+                </div>
+                <a class="home-link hvr-icon-pop icon-pop-arrow" href="http://nerdlabyyc.com">See the Live Site</a>
+              </div>
+            </li>
+            <li class="portfolio__item ss-style-doublediagonal ss-dark">
+              <div class="container container--home">
+                <img srcset="{{site.baseurl}}/img/portfolio/weather-app--small.png 285w,
+                {{site.baseurl}}/img/portfolio/weather-app--med.png 550w, 
+                {{site.baseurl}}/img/portfolio/weather-app.png 767w" 
+                src="{{site.baseurl}}/img/portfolio/weather-app.png"
+                alt="Weather App website"
+                class="home-thumbnail">
+                <h2 class="portfolio-title gradient-light">Animated Weather App</h2>
+                <div class="portfolio-description">
+                  <p>As part of the <a href="http://www.freecodecamp.com/map">Free Code Camp</a> curriculum, I was required to create a basic weather app. Users of the app needed to be able to see the weather in their current location, and optionally be able to see a different icon and background image depending on the weather.</p>
+                  <p>I took this opportunity to learn HTML5 Canvas and I animated custom icon backgrounds for 14 separate weather conditions (28 including day and night conditions). I gave users the option to search for a city or use geolocation to look up the current weather. Users are given the option of seeing the temperature in Celsius or Fahrenheit. They are also given information on wind speed and direction, as well as humidity.</p>
+                </div>
+                <a class="home-link hvr-icon-pop icon-pop-arrow" href="http://htovey.com/weather-app">See the Live Site</a>
+                
+              </div>
+            </li>
+            <li class="portfolio__item ss-style-doublediagonal ss-dark">
+              <div class="container container--home">
+                <img srcset="{{site.baseurl}}/img/portfolio/quote-generator--small.png 285w,
+                {{site.baseurl}}/img/portfolio/quote-generator--med.png 550w, 
+                {{site.baseurl}}/img/portfolio/quote-generator.png 767w" 
+                src="{{site.baseurl}}/img/portfolio/quote-generator.png"
+                alt="Quote Generator website"
+                class="home-thumbnail">
+                <h2 class="portfolio-title gradient-light">Tweetable Quote Generator</h2>
+                <div class="portfolio-description">
+                <p>As part of the <a href="http://www.freecodecamp.com/map">Free Code Camp</a> curriculum, I was required to build a Random Quote Machine. Users needed to be able to click a button to be shown a new quote, and optionally be able to press a button to tweet out the quote.</p>
+                <p>I used jQuery to create a minimalist site dedicated to quotes on learning how to code. The quote generator gives users a random quote, allows them to check out the source of the quote, and also gives them the ability to tweet the quote (including a link to its source). </p>
+                </div>
+                <a class="home-link hvr-icon-pop icon-pop-arrow" href="http://codepen.io/hrtovey/full/yNEavK/">See the Live Site</a>
+              </div>
+            </li>
+            <li class="portfolio__item ss-style-doublediagonal ss-dark">
+              <div class="container container--home">
+                <img srcset="{{site.baseurl}}/img/portfolio/paylab--small.png 285w,
+                {{site.baseurl}}/img/portfolio/paylab--med.png 550w, 
+                {{site.baseurl}}/img/portfolio/paylab.png 767w" 
+                src="{{site.baseurl}}/img/portfolio/paylab.png"
+                alt="PayLab Networks website"
+                class="home-thumbnail">
+                <h2 class="portfolio-title gradient-light">PayLab Networks</h2>
+                <div class="portfolio-description">
+                <p>PayLab Networks is a Calgary startup specializing in mobile payments for vending. They had a domain name and a basic site with images and non-clickable links. They required a functional website for potential investors to read up on the company and get in touch with the company founder.</p>
+                <p>Originally, the website was created using WordPress and hosted on Google App Engine. Later, the team requested the site be moved from WordPress to a static site. I hand-coded the finished product and set up the site to use a 3rd-party service for the email form.</p>
+                </div>
+                <a class="home-link hvr-icon-pop icon-pop-arrow" href="http://paylabnetworks.com">See the Live Site</a>
+              </div>
+            </li>
+          </ul>
+    </section>
 
-    <div class="main-container">
-        <div class="main wrapper clearfix">
-
-            <p>I spend my time building websites and web apps, and I'm currently focused on building my JavaScript and AngularJS skills. I'm co-founder of <a href="http://nerdlabyyc.com/">NerdLab YYC</a>, and passionate about increasing diversity in Calgary's tech community. I also happen to enjoy drinking coffee, playing RPGs, and watching Doctor Who.</p>
-
-
-        </div> <!-- #main -->
-    </div> <!-- #main-container -->
-
-    <div class="footer-container">
-        <footer class="wrapper">
-            <ul class="social-icons">
-                <li class="social"><a href="mailto:heather@htovey.com"><i class="fa fa-2x fa-envelope-o social-icon"></i> Email</a></li><!--
-             --><li class="social"><a href="https://twitter.com/HRTovey"><i class="fa fa-2x fa-twitter social-icon"></i> Twitter</a></li><!--
-             --><li class="social"><a href="http://codepen.io/hrtovey/"><i class="fa fa-2x fa-codepen social-icon"></i> CodePen</a></li><!--
-             --><li class="social"><a href="https://github.com/hrtovey"><i class="fa fa-2x fa-github social-icon"></i> GitHub</a></li><!--
-             --><li class="social"><a href="http://ca.linkedin.com/in/htovey"><i class="fa fa-2x fa-linkedin social-icon"></i> LinkedIn</a></li><!--
-             --><li class="social"><a href="https://www.goodreads.com/user/show/303501-heather"><i class="fa fa-2x fa-goodreads social-icon">g</i> Goodreads</a></li>
-            </ul>
-        </footer>
-    </div>
-</div>
+    <section class="home__about home__section ss-style-doublediagonal ss-light ss-light-padding" id="about">
+          <h2 class="section-header">About Me</h2>
+          <div class="container container--small">
+          <img class="author-pic" src="{{ site.baseurl }}/img/heather.jpg" alt="Heather Tovey" />
+          <p class="author-description">Front-End Web Developer based in Calgary, Alberta. Co-Founder of NerdLab YYC, a community for feminist nerds who work in tech. I also have a degree in Psychology and a keen interest in website accessibility and usability.</p>
+          <a class="home-link hvr-icon-pop icon-pop-email" href="mailto:heather@htovey.com">Say Hello</a>
+        </div>
+    </section>
