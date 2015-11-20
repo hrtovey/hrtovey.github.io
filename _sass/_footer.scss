@@ -13,8 +13,20 @@
 	text-transform:uppercase;
 }
 
+.social-media__link {
+  border-bottom:none;
+  font-weight:bold;
+  color: $brand-color-dark;
+}
+
+.social-media__link:hover {
+  text-decoration:none;
+}
+
 .footer-divider {
-	color:$brand-color;
+	color:$brand-color-dark;
+}
+
 * {
   margin: 0;
 }
