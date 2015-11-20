@@ -1,0 +1,94 @@
+.divider-container {
+	overflow: hidden;
+  	width:100%;
+  	margin:0px;
+	/* we don't want the pseudo-elements sticking out */
+}
+
+.home__description {
+	padding: 3rem 0 6rem;
+}
+
+@media (min-width:600px) {
+	.home__description {
+		padding: 12rem 0 18rem;
+	}
+}
+
+/*** Individual section styles and separators ***/
+
+/* Common style for pseudo-elements */
+
+
+/* Double Diagonal line */
+
+.ss-style-doublediagonal {
+	z-index: 1;
+	position: relative;
+	background: $brand-color;
+}
+
+
+
+.ss-style-doublediagonal::before,
+.ss-style-doublediagonal::after {
+	top: 0;
+	left: -25%;
+	z-index: -1;
+	width: 150%;
+	height: 75%;
+	background: inherit;
+	-webkit-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+.ss-style-doublediagonal::before {
+	height: 50%;
+	-webkit-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+	-webkit-transform-origin: 3% 0;
+	transform-origin: 3% 0;
+}
+
+.portfolio-list {
+	margin:0;
+}
+
+
+
+.ss-light {
+	background: $background-color-light;
+}
+
+.ss-light-padding {	
+	padding: 3rem 0 9rem;
+}
+
+.ss-light::before {
+	background: darken($background-color-light, 15%);
+}
+
+.ss-dark {
+	background: $background-color;
+	padding: 3rem 0 9rem;
+}
+
+
+
+@media (min-width:550px) {
+	.ss-dark {
+		padding: 5rem 0 20rem;
+	}
+	.ss-light-padding {
+		padding: 5rem 0 20rem;
+	}
+}
+
+.ss-dark::before {
+	background: darken($background-color-light, 60%);
+}
