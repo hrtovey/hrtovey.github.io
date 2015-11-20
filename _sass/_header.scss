@@ -11,7 +11,7 @@
 
 .site-title {
     font-size: 24px;
-    line-height: 56px;
+    line-height: 0;
     margin-bottom: 0;
     color:$text-color;
     text-transform: uppercase;
@@ -52,6 +52,12 @@
 	color:$brand-color-dark;
 	border-bottom: 2px solid $brand-color-dark;
 }
+
+@media (min-width: 240px) {
+	.site-title {
+		line-height:56px;
+	}
+}
 @media (min-width:480px) {
 
 	.site-title {
@@ -60,7 +66,7 @@
 	}
 	.site-nav {
 		float:right;
-		line-height:72px;
+		line-height:75px;
 	}
 
 }

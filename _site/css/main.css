@@ -861,7 +861,7 @@ body {
 
 .site-title {
   font-size: 24px;
-  line-height: 56px;
+  line-height: 0;
   margin-bottom: 0;
   color: #1C202A;
   text-transform: uppercase;
@@ -870,7 +870,8 @@ body {
   border-bottom: none; }
 
 .site-title:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  border-bottom: none; }
 
 .site-title:visited {
   color: #1C202A; }
@@ -887,13 +888,17 @@ body {
   font-size: 14px;
   letter-spacing: 1px;
   border-bottom: none;
-  color: #9B4839; }
+  color: #9B4839;
+  font-weight: bold; }
 
 .page-link:hover {
   text-decoration: none;
   color: #9B4839;
   border-bottom: 2px solid #9B4839; }
 
+@media (min-width: 240px) {
+  .site-title {
+    line-height: 56px; } }
 @media (min-width: 480px) {
   .site-title {
     float: left;
@@ -901,7 +906,7 @@ body {
 
   .site-nav {
     float: right;
-    line-height: 72px; } }
+    line-height: 75px; } }
 @media (min-width: 600px) {
   .site-title {
     font-size: 36px;
@@ -914,8 +919,7 @@ body {
   .page-link {
     margin-left: 20px;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold; }
+    letter-spacing: 1px; }
 
   .site-header {
     padding: 20px 0; }
@@ -1005,7 +1009,8 @@ body {
 .home-link:hover {
   text-decoration: none;
   background: #c76249;
-  color: #1C202A; }
+  color: #1C202A;
+  border-bottom: none; }
 
 .home-link:visited {
   color: #1C202A; }
@@ -1095,7 +1100,9 @@ body {
   color: #9B4839; }
 
 .social-media__link:hover {
-  text-decoration: none; }
+  color: #632e24;
+  text-decoration: none;
+  border-bottom: none; }
 
 .footer-divider {
   color: #9B4839; }
