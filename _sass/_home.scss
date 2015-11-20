@@ -94,6 +94,7 @@
 	text-decoration:none;
 	background: darken($brand-color-medium, 10%);
 	color:$text-color;
+  border-bottom:none;
 }
 
 .home-link:visited {

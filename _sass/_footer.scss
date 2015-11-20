@@ -20,7 +20,9 @@
 }
 
 .social-media__link:hover {
+  color: darken($brand-color-dark, 15%);
   text-decoration:none;
+  border-bottom:none;
 }
 
 .footer-divider {
