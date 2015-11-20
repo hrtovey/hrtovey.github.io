@@ -57,7 +57,9 @@
   text-align:left;
   color: lighten($grey-color, 30%);
 }
-.gradient {
+.backgroundcliptext .gradient {
+  background: -webkit-linear-gradient(30deg, #F2AF9B 0%, #9B4839 30%, #9B4839 45%, #F2AF9B 100%) repeat;
+  background: -o-linear-gradient(30deg, #F2AF9B 0%, #9B4839 30%, #9B4839 45%, #F2AF9B 100%) repeat;
   background: linear-gradient(120deg, #F2AF9B 0%, #9B4839 30%, #9B4839 45%, #F2AF9B 100%) repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -66,7 +68,9 @@
   background-size: 100%;
 }
 
-.gradient-light {
+.backgroundcliptext .gradient-light {
+  background: -webkit-linear-gradient(30deg, #D38470 0%, #FBD4C2 25%, #D38470 75%, #FBD4C2 100%) repeat;
+  background: -o-linear-gradient(30deg, #D38470 0%, #FBD4C2 25%, #D38470 75%, #FBD4C2 100%) repeat;
   background: linear-gradient(120deg, #D38470 0%, #FBD4C2 25%, #D38470 75%, #FBD4C2 100%) repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -75,6 +79,9 @@
   background-size: 100%;
 }
 
+.no-backgroundcliptext .gradient {
+  color: $brand-color-dark;
+}
 .case-study-text:after {
 	content: "\2192";
 }
