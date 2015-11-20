@@ -1,0 +1,98 @@
+.logo {
+	max-width:50px;
+	margin-top:-5px;
+}
+
+.site-header {
+	padding: 5px 0;
+	margin-bottom:5%;
+	text-align:center;
+}
+
+.site-title {
+    font-size: 24px;
+    line-height: 56px;
+    margin-bottom: 0;
+    color:$text-color;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family:$headline-font-family;
+    border-bottom:none;
+}
+
+.site-title:hover {
+	text-decoration:none;
+}
+
+.site-title:visited {
+	color:$text-color;
+}
+
+.small-caps {
+	font-size: 18px;
+}
+
+.site-nav {
+	text-align:center;
+}
+
+.page-link {
+	margin:0 10px;
+	text-transform:uppercase;
+	font-size:14px;
+	letter-spacing:1px;
+	border-bottom:none;
+	color: $brand-color-dark;
+}
+
+.page-link:hover {
+	text-decoration:none;
+	color:$brand-color-dark;
+	border-bottom: 2px solid $brand-color-dark;
+}
+@media (min-width:480px) {
+
+	.site-title {
+		float:left;
+		line-height:69px;
+	}
+	.site-nav {
+		float:right;
+		line-height:72px;
+	}
+
+}
+
+
+@media (min-width:600px) {
+	.site-title {
+	    font-size: 36px;
+		line-height:0;
+	}
+
+	.site-nav {
+	    float: right;
+	    line-height: 72px;
+	}
+
+	.page-link {
+		margin-left: 20px;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		font-weight:bold;
+	}
+
+	.site-header {
+		padding:20px 0;
+	}
+
+	.small-caps {
+		font-size: 24px;
+	}
+
+	.logo {
+		max-width:80px;
+		margin-top:-8px;
+	}	
+}
+
