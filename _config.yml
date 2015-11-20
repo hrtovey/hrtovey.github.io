@@ -1,5 +1,6 @@
 # Site settings
-title: Heather Tovey | Calgary Web Developer
+title: Heather Tovey
+subtitle: Front-End Web Developer
 email: heather@htovey.com
 description: > # this means to ignore newlines until "baseurl:"
   Heather Tovey is a front-end web developer in Calgary, Alberta. She specializes in building web apps and websites using HTML5, CSS3, and JavaScript.
@@ -7,6 +8,10 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://htovey.com" # the base hostname & protocol for your site
 twitter_username: HRTovey
 github_username:  hrtovey
+codepen_username: hrtovey
+collections:
+  portfolio:
+    output: true
 
 # Build settings
 markdown: kramdown
