@@ -1,5 +1,5 @@
 .logo {
-	max-width:50px;
+	max-width:40px;
 	margin-top:-5px;
 }
 
@@ -11,12 +11,11 @@
 
 .site-title {
     font-size: 24px;
-    line-height: 0;
     margin-bottom: 0;
-    color:$text-color;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-family:$headline-font-family;
+    color:$brand-color-dark;
+    text-transform:uppercase;
+    font-family:"Raleway";
+    font-weight:300;
     border-bottom:none;
 }
 
@@ -26,7 +25,7 @@
 }
 
 .site-title:visited {
-	color:$text-color;
+	color:$brand-color-dark;
 }
 
 .small-caps {
@@ -44,7 +43,7 @@
 	letter-spacing:1px;
 	border-bottom:none;
 	color: $brand-color-dark;
-	font-weight:bold;
+	font-weight:400;
 }
 
 .page-link:hover {
@@ -73,10 +72,6 @@
 
 
 @media (min-width:600px) {
-	.site-title {
-	    font-size: 36px;
-		line-height:0;
-	}
 
 	.site-nav {
 	    float: right;
@@ -98,7 +93,7 @@
 	}
 
 	.logo {
-		max-width:80px;
+		max-width:40px;
 		margin-top:-8px;
 	}	
 }
