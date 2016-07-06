@@ -3,10 +3,14 @@
 }
 
 .home-header {
-	margin-bottom:3rem;
+  margin-bottom:1rem;
   font-family: $base-font-family;
   font-weight:300;
   line-height: 1.5;
+}
+
+.home-subtitle {
+  margin-bottom:3rem;
 }
 
 .section-header {
@@ -51,7 +55,7 @@
 
 .portfolio-title, .portfolio-description {
 	display:block;
-	color:$brand-color;
+	color:#d38470;
 	max-width:767px;
 	margin:0 auto 4rem;
 }
@@ -106,7 +110,7 @@
 
 .home-link {
 	background: $brand-color-medium;
-	border-radius:5px;
+	border-radius:2px;
 	padding: 1rem 2rem;
 	text-transform: uppercase;
 	font-weight:600;
