@@ -31,3 +31,6 @@ Temporary Items
 _site/
 .sass-cache/
 .jekyll-metadata
+/_site/index.html
+/_site/feed.xml
+/_site/css/main.css

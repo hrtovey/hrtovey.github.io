@@ -5,7 +5,8 @@ email: heather@htovey.com
 description: > # this means to ignore newlines until "baseurl:"
   Heather Tovey is a front-end web developer in Calgary, Alberta. She specializes in building web apps and websites using HTML5, CSS3, and JavaScript.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://htovey.com" # the base hostname & protocol for your site
+url: "https://htovey.com" # the base hostname & protocol for your site
+enforce_ssl: htovey.com
 twitter_username: HRTovey
 github_username:  hrtovey
 codepen_username: hrtovey
