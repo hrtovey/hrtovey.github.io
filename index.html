@@ -3,10 +3,10 @@ layout: home
 ---
 
     <section class="home__description home__section ss-style-doublediagonal ss-light">
-      <div class="container container--home">
-        <h1 class="home-header">Heather Tovey</h1>
-        <h2 class="home-subtitle"><span id="_followMouse" class="gradient">Front-End Web Developer</span></h2>
-        <a class="home-link hvr-icon-pop icon-pop-arrow-down" href="/#projects">Recent Projects</a>
+      <div class="container">
+        <h1 class="home-header">Front-End Web Developer</h1>
+        <p class="home-description">Designing and developing user-friendly and accessible websites and apps.</p>
+        <a class="home-link hvr-icon-pop icon-pop-arrow-down" href="/#projects">Projects</a>
       </div>
     </section>
     <section class="home__portfolio home__section" id="projects">
@@ -25,7 +25,7 @@ layout: home
                 <p>NerdLab YYC, a Calgary community for feminist nerds in tech, needed a place to post news and house resources (including their Code of Conduct). I took their logo, and created a fun and functional website around it.</p>
                 <p>Feminist and geeky icons, as well as the pink accent color complement the group's personality and interests. The website also encourages visitors to join NerdLab YYC's Meetup group, and  prominently displays the group's Code of Conduct.</p>
                 </div>
-                <a class="home-link hvr-icon-pop icon-pop-arrow" href="http://nerdlabyyc.com">See the Live Site</a>
+                <a class="home-link portfolio-link hvr-icon-pop icon-pop-arrow" target="_window" href="http://nerdlabyyc.com">See the Live Site</a>
               </div>
             </li>
             <li class="portfolio__item ss-style-doublediagonal ss-dark">
@@ -38,10 +38,11 @@ layout: home
                 class="home-thumbnail">
                 <h2 class="portfolio-title">Animated Weather App</h2>
                 <div class="portfolio-description">
-                  <p>As part of the <a href="http://www.freecodecamp.com/map">Free Code Camp</a> curriculum, I was required to create a basic weather app. Users of the app needed to be able to see the weather in their current location, and optionally be able to see a different icon and background image depending on the weather.</p>
-                  <p>I took this opportunity to learn HTML5 Canvas and I animated custom icon backgrounds for 14 separate weather conditions (28 including day and night conditions). I gave users the option to search for a city or use geolocation to look up the current weather. Users are given the option of seeing the temperature in Celsius or Fahrenheit. They are also given information on wind speed and direction, as well as humidity.</p>
+                  <p>Every developer needs a weather app, right? Here's my take.</p>
+                  <p>I wanted to create a basic weather app where visitors could see the weather in their current location, as well as other locations. I also wanted to provide a different experience based on the weather displayed.</p>
+                  <p>I took this opportunity to learn HTML5 Canvas and I animated custom icon backgrounds for 14 separate weather conditions (28 including day and night conditions). I gave visitors the option to search for a city or use geolocation to look up the current weather. Visitors are given the option of seeing the temperature in Celsius or Fahrenheit. They are also given information on wind speed and direction, as well as humidity.</p>
                 </div>
-                <a class="home-link hvr-icon-pop icon-pop-arrow" href="http://htovey.com/weather-app">See the Live Site</a>
+                <a class="home-link portfolio-link hvr-icon-pop icon-pop-arrow" href="http://htovey.com/weather-app" target="_window">See the Live Site</a>
                 
               </div>
             </li>
@@ -55,10 +56,10 @@ layout: home
                 class="home-thumbnail">
                 <h2 class="portfolio-title">Tweetable Quote Generator</h2>
                 <div class="portfolio-description">
-                <p>As part of the <a href="http://www.freecodecamp.com/map">Free Code Camp</a> curriculum, I was required to build a Random Quote Machine. Users needed to be able to click a button to be shown a new quote, and optionally be able to press a button to tweet out the quote.</p>
-                <p>I used jQuery to create a minimalist site dedicated to quotes on learning how to code. The quote generator gives users a random quote, allows them to check out the source of the quote, and also gives them the ability to tweet the quote (including a link to its source). </p>
+                <p>Learning to code can be a daunting journey for many people. For this project, I wanted to reate a Random Quote Machine that allowed visitors to click a button and receive a random quote about learning to code.</p>
+                <p>I used jQuery to create a minimalist site dedicated to inspirational quotes on learning how to code. The quote generator gives visitors a random quote, allows them to check out the source of the quote, and also gives them the ability to tweet the quote (including a link to its source). </p>
                 </div>
-                <a class="home-link hvr-icon-pop icon-pop-arrow" href="http://codepen.io/hrtovey/full/yNEavK/">See the Live Site</a>
+                <a class="home-link portfolio-link hvr-icon-pop icon-pop-arrow" href="http://codepen.io/hrtovey/full/yNEavK/" target="_window">See the Live Site</a>
               </div>
             </li>
             <li class="portfolio__item ss-style-doublediagonal ss-dark">
@@ -71,10 +72,10 @@ layout: home
                 class="home-thumbnail">
                 <h2 class="portfolio-title">PayLab Networks</h2>
                 <div class="portfolio-description">
-                <p>PayLab Networks is a Calgary startup specializing in mobile payments for vending. They had a domain name and a basic site with images and non-clickable links. They required a functional website for potential investors to read up on the company and get in touch with the company founder.</p>
+                <p>PayLab Networks is a Calgary startup specializing in mobile payments for vending. They had a domain name and a website with one large image. They required a functional website for potential investors to read up on the company and get in touch with the company founder.</p>
                 <p>Originally, the website was created using WordPress and hosted on Google App Engine. Later, the team requested the site be moved from WordPress to a static site. I hand-coded the finished product and set up the site to use a 3rd-party service for the email form.</p>
                 </div>
-                <a class="home-link hvr-icon-pop icon-pop-arrow" href="http://paylabnetworks.com">See the Live Site</a>
+                <a class="home-link portfolio-link hvr-icon-pop icon-pop-arrow" href="http://paylabnetworks.com" target="_window">See the Live Site</a>
               </div>
             </li>
           </ul>
@@ -83,8 +84,8 @@ layout: home
     <section class="home__about home__section ss-style-doublediagonal ss-light ss-light-padding" id="about">
           <h2 class="section-header">About Me</h2>
           <div class="container container--small">
-          <img class="author-pic" src="{{ site.baseurl }}/img/heather.jpg" alt="Heather Tovey" />
-          <p class="author-description">Front-End Web Developer based in Calgary, Alberta. Co-Founder of NerdLab YYC, a community for feminist nerds who work in tech. I also have a degree in Psychology and a keen interest in website accessibility and usability.</p>
-          <a class="home-link hvr-icon-pop icon-pop-email" href="mailto:heather@htovey.com">Say Hello</a>
+          <img class="author-pic" src="{{ site.baseurl }}/img/heather.png" alt="Heather Tovey" />
+          <p class="author-description">I'm a Front-End Web Developer based in Calgary, Alberta. My background is in Psychology and I enjoy creating user-friendly and accessible websites and apps. You can also find me over at my <a href="https://heathertovey.com" target="_window">other website</a> where I focus on creating Squarespace websites for busy online entrepreneurs.</p>
+          <a class="home-link email-link hvr-icon-pop icon-pop-email" href="mailto:heather@htovey.com">Say Hello</a>
         </div>
     </section>

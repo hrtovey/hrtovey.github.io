@@ -70,7 +70,7 @@
 }
 
 .ss-light::before {
-	background: darken($background-color-light, 15%);
+	background: $brand-color;;
 }
 
 .ss-dark {
@@ -90,5 +90,5 @@
 }
 
 .ss-dark::before {
-	background: darken($background-color-light, 60%);
+	background: $brand-color;
 }

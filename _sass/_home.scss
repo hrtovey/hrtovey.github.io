@@ -4,13 +4,14 @@
 
 .home-header {
   margin-bottom:1rem;
-  font-family: $base-font-family;
-  font-weight:300;
+  font-family: $headline-font-family;
+  font-weight:700;
   line-height: 1.5;
 }
 
-.home-subtitle {
+.home-description {
   margin-bottom:3rem;
+  font-size:20px;
 }
 
 .section-header {
@@ -33,12 +34,12 @@
 	}
 }
 .author-pic {
-	max-width: 120px;
-	border-radius:50%;
+	max-width: 200px;
 }
 
 .author-description {
-	margin:4rem 0 4.5rem;
+  margin:4rem 0 4.5rem;
+  text-align:left;
 }
 
 .home-thumbnail {
@@ -53,16 +54,15 @@
 	box-sizing: border-box;
 }
 
-.portfolio-title, .portfolio-description {
-	display:block;
-	color:#d38470;
-	max-width:767px;
-	margin:0 auto 4rem;
+.portfolio-title {
+	color: $brand-color;
+  margin:0 auto 4rem;
+  text-transform:uppercase;
 }
 
 .portfolio-description {
   text-align:left;
-  color: lighten($grey-color, 30%);
+  color: $text-color-light;
 }
 
 .gradient {
@@ -74,61 +74,50 @@
   color: $brand-color;
 }
 
-@media (min-width: 769px){
 
-  .backgroundcliptext .gradient {
-    background: -webkit-linear-gradient(30deg, #F2AF9B 0%, #9B4839 30%, #9B4839 45%, #F2AF9B 100%) repeat;
-    background: -o-linear-gradient(30deg, #F2AF9B 0%, #9B4839 30%, #9B4839 45%, #F2AF9B 100%) repeat;
-    background: linear-gradient(120deg, #F2AF9B 0%, #9B4839 30%, #9B4839 45%, #F2AF9B 100%) repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display:block;
-    background-position: 0;
-    background-size: 100%;
-  }
-
-  .backgroundcliptext .gradient-light {
-    background: -webkit-linear-gradient(30deg, #D38470 0%, #FBD4C2 25%, #D38470 75%, #FBD4C2 100%) repeat;
-    background: -o-linear-gradient(30deg, #D38470 0%, #FBD4C2 25%, #D38470 75%, #FBD4C2 100%) repeat;
-    background: linear-gradient(120deg, #D38470 0%, #FBD4C2 25%, #D38470 75%, #FBD4C2 100%) repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display:block;
-    background-position: 0;
-    background-size: 100%;
-  }
-
-}
-
-
-.no-backgroundcliptext .gradient {
-  color: $brand-color-dark;
-}
 .case-study-text:after {
 	content: "\2192";
 }
 
 .home-link {
-	background: $brand-color-medium;
-	border-radius:2px;
-	padding: 1rem 2rem;
-	text-transform: uppercase;
-	font-weight:600;
-	color:$text-color;
-  font-size:1.2rem;
-  border-bottom:none;
+  padding: 25px 50px 25px 25px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: $text-color;
+  background-color: $brand-color-medium;
+  background-image: linear-gradient(45deg, #ff6179 0%, #ff6362 100%);
+  margin-top: 6rem;
+  border:none;
 }
 
 .home-link:hover {
 	text-decoration:none;
-	background: darken($brand-color-medium, 10%);
-	color:$text-color;
-  border-bottom:none;
+  background: darken($brand-color-medium, 10%);
+  background-image: linear-gradient(45deg, lighten(#ff6179, 5%) 0%, lighten(#ff6362, 5%) 100%);
+  color:$text-color;
+  border:none;
 }
 
-.home-link:visited {
-	color:$text-color;
+.home-link.portfolio-link {
+  background: none;
+  color: white;
+  border: 2px solid white;
 }
+
+.home-link.portfolio-link:hover {
+	background: none;
+  color: $brand-color;
+  border: 2px solid $brand-color;
+}
+
+.home-link.email-link {
+  padding: 25px 25px 25px 50px;
+}
+
 /* Icon Pop */
 @-webkit-keyframes hvr-icon-pop {
   50% {

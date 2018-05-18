@@ -50,7 +50,7 @@
 }
 
 .container--small {
-  max-width:500px;
+  max-width:588px;
 }
 
 /* For devices larger than 400px */
@@ -153,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $headline-font-family;
   margin-top: 0;
   margin-bottom: 2rem;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing:0;}
 h1 { font-size: 3.0rem; line-height: 1.2; }
 h2 { font-size: 2.6rem; line-height: 1.25; }
@@ -174,7 +174,7 @@ h6 { font-size: 1rem; line-height: 1.6; }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-  h1 { font-size: 5.0rem; }
+  h1 { font-size: 6.0rem; }
   h2 { font-size: 4.2rem; }
   h3 { font-size: 3.6rem; }
   h4 { font-size: 3.0rem; }
@@ -191,12 +191,21 @@ p {
 a {
     color: lighten($grey-color, 30%);
     text-decoration: none;
-    border-bottom: 1px solid lighten($grey-color, 30%);
+    border-bottom: 3px solid lighten($grey-color, 30%);
 
     &:hover {
         color: $brand-color;
-        border-bottom: 1px solid $brand-color;
+        border-bottom: 3px solid $brand-color;
     }
+}
+
+.author-description a {
+  color: $text-color;
+  border-bottom: 3px solid $text-color;
+
+  &:hover {
+    border-bottom: 3px solid $brand-color;
+  }
 }
 
 
